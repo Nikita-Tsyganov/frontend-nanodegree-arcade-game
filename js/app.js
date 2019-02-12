@@ -64,9 +64,17 @@ class Enemy extends Character {
     }
 
     /* Update the enemy's position.
+     * Check the collision with the player.
      * Respawn if reached the end of the lane.
      */
     update(dt) {
+
+        if (Math.abs(this.x - player.x) < 75 && this.y == player.y) {
+
+                alert("You lost");
+                player.spawn();
+
+        }
 
         let distance = this.speed * dt;
         this.x += distance;
@@ -104,8 +112,7 @@ class Player extends Character {
 
     }
 
-    /* Update the player's position.
-     * Alert victory if reached the end
+    /* Alert victory if reached the end
      * of the screen and respawn.
      */
     update() {

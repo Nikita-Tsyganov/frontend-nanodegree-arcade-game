@@ -140,7 +140,7 @@
         get: get,
         onReady: onReady,
         isReady: isReady
-        
+
     };
 
 })();

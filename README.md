@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-- [Description](#Description)
-- [How to run](#How to run)
-- [How to play](#How to play)
+- [Description](#description)
+- [How to run](#how-to-run)
+- [How to play](#how-to-play)
 
 ## Description
 
@@ -13,6 +13,8 @@ The goal of the game is to reach the opposite side of the screen while avoiding 
 
 ## How to run
 
+Donwload the repository to your machine.
+Navigate to "frontend-nanodegree-arcade-game-master" folder.
 Start the game by launching the index.html file in your browser.
 
 ## How to play

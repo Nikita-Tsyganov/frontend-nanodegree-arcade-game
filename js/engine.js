@@ -98,31 +98,10 @@ let Engine = (function(global) {
 
         allEnemies.forEach(function(enemy) {
 
-            checkCollisions();
             enemy.update(dt);
 
         });
         player.update();
-
-    }
-
-    /* This is called by the updateEntities function and loops through all of the
-     * objects within the allEnemies array as defined in app.js and checks if
-     * there is a collision with the player. If there is a collision,
-     * the player will be notified of the loss and respawned.
-     */
-    function checkCollisions() {
-
-        allEnemies.forEach(function(enemy) {
-
-            if (Math.abs(enemy.x - player.x) < 75 && enemy.y == player.y) {
-
-                alert("You lost");
-                player.spawn();
-
-            }
-
-        });
 
     }
 
@@ -150,7 +129,7 @@ let Engine = (function(global) {
             row, col;
 
         // Before drawing, clear existing canvas
-        ctx.clearRect(0,0,canvas.width,canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         /* Loop through the number of rows and columns we've defined above
          * and, using the rowImages array, draw the correct image for that
