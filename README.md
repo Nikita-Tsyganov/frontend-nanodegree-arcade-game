@@ -13,6 +13,10 @@ The goal of the game is to reach the opposite side of the screen while avoiding 
 
 ## How to run
 
+Just click [here](https://nikita-tsyganov.github.io/simple-browser-arcade-game/)
+
+OR
+
 Donwload the repository to your machine.
 Navigate to "frontend-nanodegree-arcade-game-master" folder.
 Start the game by launching the index.html file in your browser.
